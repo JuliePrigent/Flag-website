@@ -1,0 +1,13 @@
+.continent {
+    display:grid;
+  grid-template-columns: 33% [debut-end asie-start] 100px [asie-end afrique-start] 100px 
+  [afrique-end europe-start] 100px [europe-end amerique-start] 100px [amerique-end] 33% ;
+  grid-template-rows: repeat(4, 60px);
+  justify-items: center;
+  align-items: center;
+  grid-auto-flow: dense;
+}
+
+[data-continent]{
+    grid-column :3 ;
+}
